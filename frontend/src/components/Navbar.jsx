@@ -33,14 +33,14 @@ const Navbar = () => {
 
         <div className="hidden items-center gap-8 md:flex!">
           {links.map((item,idx)=> (
-            <Link key={idx} className="text-sm font-medium text-slate-700 hover:text-slate-900" to={item.to}>{item.data}</Link>
+            <Link key={idx} className="text-md focus:text-blue-600 font-medium text-slate-600 hover:text-slate-900" to={item.to}>{item.data}</Link>
           ))}
           
           
         </div>
 
         <div className="hidden items-center gap-3 md:flex!">
-          <Link to={'/signup'} className="rounded-lg px-4 py-2 text-sm font-semibold text-slate-700 hover:text-slate-900">
+          <Link to={'/signup'} className="rounded-lg px-4 py-2 text-sm font-semibold text-slate-600 hover:text-slate-900">
             Sign in
           </Link>
           <button className="rounded-lg bg-linear-to-br from-blue-500 via-blue-600 to-blue-700 px-5 py-2 text-sm font-semibold text-white shadow-sm ">
@@ -70,7 +70,7 @@ const Navbar = () => {
         <div className="border-t border-slate-200/60 bg-white/80 md:hidden">
           <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-4">
              {links.map((item,idx)=> (
-            <Link key={idx} className="text-sm font-medium text-slate-700 hover:text-slate-900" to={item.to}>{item.data}</Link>
+            <Link key={idx} className="text-sm active:text-blue-600 font-medium text-slate-700 hover:text-slate-900" to={item.to}>{item.data}</Link>
           ))}
             <div className="mt-2 flex items-center gap-2">
               <Link to={''} className="flex-1 text-center rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700">

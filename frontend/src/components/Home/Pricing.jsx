@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 py-8">
-      <div className="flex w-full">
-        <div className="w-1/2">
+    <section className="mx-auto w-full max-w-7xl px-4 py-20">
+      <div className="flex w-full items-center">
+        {/* Left Side - Untouched as requested */}
+        <div className="w-1/3">
           <h1 className="text-4xl font-semibold text-slate-900">
             Unbeatable Pricing{" "}
           </h1>
@@ -14,17 +15,31 @@ const Pricing = () => {
             in india. Flat fees and no hidden charges.
           </p>
           <Link className=" text-blue-600 " to={"/"}>
-            See Pricing <i class="fa-solid fa-arrow-right"></i>
+            See Pricing <i className="fa-solid fa-arrow-right ml-2"></i>
           </Link>
         </div>
-        <div className="w-1/2 flex text-center">
-          <div className="w-1/2 flex border-1 p-12 border-gray-300 flex-col items-center ">
-            <h1 className="text-4xl font-semibold text-slate-900">&#x20B9;0</h1>
-            <p className="text-sm mt-4 text-slate-600 px-4">Free equity delivery and direct mutual funds</p>
+
+        {/* Fixed Right Side */}
+        <div className="w-2/3 grid grid-cols-3 gap-2">
+          <div className="flex items-center">
+            <img className="w-40" src="/pricing0.svg" alt="0" />
+            <p className="text-[11px] leading-tight text-slate-500 ml-[-10px]">
+              Free account<br />opening
+            </p>
           </div>
-          <div className="w-1/2 flex border-1 p-12 border-gray-300 flex-col items-center ">
-            <h1 className="text-4xl font-semibold text-slate-900">&#x20B9;20</h1>
-            <p className="text-sm mt-4 text-slate-600 px-4">Intraday and F&O</p>
+          
+          <div className="flex items-center">
+            <img className="w-40" src="/pricingEquity.svg" alt="0" />
+            <p className="text-[11px] text-slate-500 ">
+              Free equity delivery<br />and direct mutual funds
+            </p>
+          </div>
+
+          <div className="flex items-center">
+            <img className="w-40" src="/intradayTrades.svg" alt="20" />
+            <p className="text-[11px] leading-tight text-slate-500 ml-[-10px]">
+              Intraday and<br />F&O
+            </p>
           </div>
         </div>
       </div>

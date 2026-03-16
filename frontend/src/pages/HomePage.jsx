@@ -10,11 +10,11 @@ import Footer from "./../components/Footer";
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col gap-20 font-[Poppins]">
+    <main className="flex flex-col gap-20 font-[inter]">
       <Hero />
+      <Pricing />
       <Awards />
       <Stats />
-      <Pricing />
       <Education />
       <OpenAccount />
     </main>
