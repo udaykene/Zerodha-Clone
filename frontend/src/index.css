@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.charges p {
+    margin: 15px 0;
+}
+
+.p-small{
+    font-size: 12px;
+}
