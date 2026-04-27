@@ -1,8 +1,12 @@
 import React from 'react'
+import Hero from '../components/Support/Hero'
 
 const SupportPage = () => {
   return (
-    <div>SupportPage</div>
+   <main className="flex flex-col gap-20 font-[Poppins]">
+    <Hero/>
+   </main>
+   
   )
 }
 
