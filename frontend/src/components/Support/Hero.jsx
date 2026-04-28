@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-mist-100">
-      <section className="mx-auto mb-10  w-full max-w-7xl px-4">
+    <section className="w-full mb-14 bg-mist-100">
+      <section className="mx-auto mb-10   w-full max-w-7xl px-4">
         <div className="flex py-10 text-gray-700 justify-between ">
           <h2 className="text-4xl font-bold">Support Portal</h2>
           <Link

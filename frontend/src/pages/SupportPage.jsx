@@ -1,10 +1,12 @@
 import React from 'react'
 import Hero from '../components/Support/Hero'
+import TicketCreation from './../components/Support/TicketCreation';
 
 const SupportPage = () => {
   return (
-   <main className="flex flex-col gap-20 font-[Poppins]">
+   <main className="flex flex-col  font-[Poppins]">
     <Hero/>
+    <TicketCreation/>
    </main>
    
   )
